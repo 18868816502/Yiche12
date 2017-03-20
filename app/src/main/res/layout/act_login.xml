@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/app_header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <EditText
+            android:id="@+id/et_phoneNumber"
+            style="@style/borderStyle"
+            android:layout_width="match_parent"
+            android:hint="手机号"
+            android:inputType="number"
+            android:maxLength="11"
+            android:drawableLeft="@mipmap/ic_phone"
+            android:drawablePadding="10dp"/>
+
+        <requestFocus />
+
+        <ImageView
+            android:id="@+id/iv_clearPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:contentDescription="@string/app_name"
+            android:padding="5dp"
+            android:src="@mipmap/signup_delete"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <View
+        style="@style/appline_cacancy"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/app_gray_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <EditText
+            android:id="@+id/et_pwd"
+            style="@style/borderStyle"
+            android:layout_width="match_parent"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:drawableLeft="@mipmap/ic_lock"
+            android:drawablePadding="10dp"/>
+
+        <ImageView
+            android:id="@+id/iv_clearPwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:contentDescription="@string/app_name"
+            android:padding="5dp"
+            android:src="@mipmap/signup_delete"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <View
+        style="@style/appline_cacancy"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/app_gray_line" />
+
+    <Button
+        android:id="@+id/bt_login"
+        style="@style/btnPress"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:text="登录" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/tv_forgetPwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:text="忘记登录密码"
+            android:textColor="@color/text_hint_gray"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>
